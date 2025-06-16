@@ -21,7 +21,7 @@ class Herbivore(Animal):
 
 
 class Carnivore(Animal):
-    def bite(self, other: str) -> str|None:
+    def bite(self, other: str) -> str | None:
         if not isinstance(other, Herbivore):
             return "invalid target"
         if other.hidden or other.health <= 0:
